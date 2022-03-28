@@ -4,11 +4,9 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <div class="content">
-      <h1>Home Page</h1>
-      <img
-      alt="Wolf Gear Logo"
-      src="~assets/wolf.svg"
-      style="width: 200px; height: 200px"
+      <h1>Wolf Gear</h1>
+      <img class="imgB1"
+      src="~assets/wolfgear-logo.svg"
     >
     </div>
   </q-page>
