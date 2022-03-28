@@ -56,8 +56,8 @@
             />
           </q-card>
         </q-expansion-item>
-        <!-- <q-expansion-item
-          icon="group_work"
+        <q-expansion-item
+          icon="fa-solid fa-handshake"
           label="Parceiros"
           :content-inset-level="0.5"
         >
@@ -66,7 +66,7 @@
             :key="link.title"
             v-bind="link"
           />
-        </q-expansion-item> -->
+        </q-expansion-item>
         <q-item to="/about" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="article"/>
@@ -104,7 +104,7 @@ const contactList = [
   {
     title: "Github",
     caption: "github.com/marcodkts",
-    icon: "code",
+    icon: "fa-brands fa-github",
     link: "https://github.com/marcodkts",
   },
   {
@@ -116,16 +116,15 @@ const contactList = [
   {
     title: "Linkedin",
     caption: "Marco Aurélio",
-    icon: "mail",
+    icon: "fa-brands fa-linkedin",
     link: "https://www.linkedin.com/in/marco-aur%C3%A9lio-junior-37518218a/",
   },
 ];
 const partnerList = [
   {
     title: "Otoma",
-    caption: "github.com/otoma",
-    icon: "code",
-    link: "https://github.com/otoma",
+    icon: "fa-solid fa-atom",
+    link: "https://otoma.com.br",
   },
 ];
 
