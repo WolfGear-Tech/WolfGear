@@ -97,7 +97,7 @@ const productsList = [
   {
     title: "Wolf Gear Metabase",
     icon: "analytics",
-    link: "http://wolfgear.tech:3000",
+    link: "https://wolfgear.tech:3000",
   },
 ];
 const contactList = [
