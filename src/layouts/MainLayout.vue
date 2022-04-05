@@ -12,10 +12,17 @@
         />
 
         <q-toolbar-title>
-          <q-btn flat to="/" label="Wolf Gear"/>
+          <q-btn flat to="/" label="Wolf Gear" />
         </q-toolbar-title>
 
-        <div><a href="https://quasar.dev" target="_blank" style="text-decoration:none; color: #FFFFFF;">Quasar v{{ $q.version }}</a></div>
+        <div>
+          <a
+            href="https://quasar.dev"
+            target="_blank"
+            style="text-decoration: none; color: #ffffff"
+            >Quasar v{{ $q.version }}</a
+          >
+        </div>
         <q-toggle
           v-model="darkMode"
           icon="dark_mode"
@@ -69,16 +76,22 @@
         </q-expansion-item>
         <q-item to="/about" clickable v-ripple>
           <q-item-section avatar>
-            <q-icon name="article"/>
+            <q-icon name="article" />
           </q-item-section>
           <q-item-section> Sobre Nós </q-item-section>
         </q-item>
-        <q-item to="/help" clickable v-ripple>
+        <q-item to="/login" clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon name="fa-solid fa-right-to-bracket" />
+          </q-item-section>
+          <q-item-section> Login </q-item-section>
+        </q-item>
+        <!-- <q-item to="/help" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="help"/>
           </q-item-section>
           <q-item-section> Ajuda </q-item-section>
-        </q-item>
+        </q-item> -->
       </q-list>
     </q-drawer>
 
