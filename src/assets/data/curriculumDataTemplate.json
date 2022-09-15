@@ -1,0 +1,87 @@
+{
+    "name": "",
+    "about": "",
+    "occupation": "",
+    "icon": "fa-solid fa-circle",
+    "personalInfo": [
+        {
+            "label": "",
+            "itens": [
+                {
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "label": "Contato",
+            "itens": [
+                {
+                    "icon": "fa-solid fa-location-dot",
+                    "description": ""
+                },
+                {
+                    "icon": "fa-solid fa-envelope",
+                    "description": ""
+                },
+                {
+                    "icon": "fa-brands fa-github",
+                    "description": ""
+                },
+                {
+                    "icon": "fa-brands fa-linkedin",
+                    "description": ""
+                },
+                {
+                    "icon": "fa-solid fa-phone",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "label": "Habilidades",
+            "itens": [
+                {
+                    "description": "Desenvolvimento de Software",
+                    "level": 0
+                }
+            ]
+        },
+        {
+            "label": "Idiomas",
+            "itens": [
+                {
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    "experiencesList": [
+        {
+            "label": "Qualificações e Experiências",
+            "itens": [
+                {
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "label": "Formação Acadêmica",
+            "itens": [
+                {
+                    "label": "",
+                    "description1": ""
+                }
+            ]
+        },
+        {
+            "label": "Experiência Profissional",
+            "itens": [
+                {
+                    "label": "",
+                    "description1": "",
+                    "description2": ""
+                }
+            ]
+        }
+    ]
+}
