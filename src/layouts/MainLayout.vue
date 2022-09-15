@@ -80,6 +80,12 @@
           </q-item-section>
           <q-item-section> Sobre Nós </q-item-section>
         </q-item>
+        <q-item to="/curriculum" clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon name="history_edu" />
+          </q-item-section>
+          <q-item-section> Currículo </q-item-section>
+        </q-item>
         <q-item to="/login" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="fa-solid fa-right-to-bracket" />

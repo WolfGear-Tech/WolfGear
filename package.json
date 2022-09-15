@@ -11,10 +11,13 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@quasar/extras": "^1.13.4",
     "core-js": "^3.6.5",
+    "html2pdf.js": "^0.10.1",
     "quasar": "^2.6.2",
     "vue": "^3.0.0",
+    "vue-html2pdf": "^1.8.0",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
