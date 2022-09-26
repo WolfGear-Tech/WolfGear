@@ -29,10 +29,12 @@ jobs:
     - run: npx quasar build
 
     - name: Git Version
+      id: gitversion
       uses: codacy/git-version@2.5.4
       with:
         prefix: ${{ github.event.repository.name }}-v
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-    - run: git log
+    - run: git status
+    - run: echo ${{ steps.gitversion.outputs.version }}
