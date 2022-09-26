@@ -34,9 +34,9 @@ jobs:
     - run: quasar build
 
     - name: Git Version
-        uses: codacy/git-version@2.5.4
-        with:
-          prefix: ${{ github.event.repository.name }}-
-          release-branch: main
-          dev-branch: develop
-          major-identifier: '/(?i)\brelease\b/'
+      uses: codacy/git-version@2.5.4
+      with:
+        prefix: ${{ github.event.repository.name }}-
+        release-branch: main
+        dev-branch: develop
+        major-identifier: '/(?i)\brelease\b/'
