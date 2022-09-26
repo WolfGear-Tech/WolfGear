@@ -19,13 +19,13 @@ jobs:
         ref: ${{ github.head_ref }}
         fetch-depth: 0 
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Build Release
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npx quasar build
+      run: npm install
+      run: npx quasar build
 
     - name: Git Version
       id: gitversion
@@ -35,10 +35,9 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-    - run: echo ${{ steps.gitversion.outputs.version }}
 
     - name: Upload Release
-    - run: Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
+      run: Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
       uses: xresloader/upload-to-github-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
