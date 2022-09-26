@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Build and Test
+    - name: Test Build
       run: |
         npm install
         npx quasar build
