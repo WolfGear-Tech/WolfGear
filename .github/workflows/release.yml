@@ -23,11 +23,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Build Release
-      run: |
-        npm install
-        npx quasar build
-
     - name: Git Version
       id: gitversion
       uses: codacy/git-version@2.5.4
@@ -36,13 +31,23 @@ jobs:
         dev-branch: develop
         major-identifier: '/^(?i)\brelease\b|\bbreaking\b:/'
         minor-identifier: '/^(?i)\bfeature\b|\bfeat\b:/'
+
+    - name: Add Version
+      run: |
+        ls
+        sudo apt-get install jq
+        cat package.json | jq --arg version ${{ steps.gitversion.outputs.version }} '.version |= $version' > package.json
+
+    - name: Build Release
+      run: |
+        npm install
+        npx quasar build
   
     - name: Compress Release
       run: |
-        sudo apt-get install zip jq
+        sudo apt-get install zip
         cd dist/spa/
         zip -r ${{ steps.gitversion.outputs.version }}.zip *
-        cat package.json | jq --arg version ${{ steps.gitversion.outputs.version }} '.version |= $version' > package.json
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
