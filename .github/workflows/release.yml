@@ -32,7 +32,6 @@ jobs:
       id: gitversion
       uses: codacy/git-version@2.5.4
       with:
-        prefix: ${{ github.event.repository.name }}-v
         release-branch: main
         dev-branch: develop
         major-identifier: '/^(?i)\brelease\b|\bbreaking\b:/'
@@ -40,9 +39,10 @@ jobs:
   
     - name: Compress Release
       run: |
-        sudo apt-get install zip
+        sudo apt-get install zip jq
         cd dist/spa/
         zip -r ${{ steps.gitversion.outputs.version }}.zip *
+        cat package.json | jq --arg version ${{ steps.gitversion.outputs.version }} '.version |= $version' > package.json
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
@@ -52,4 +52,4 @@ jobs:
         file: "dist/spa/${{ steps.gitversion.outputs.version }}.zip"
         overwrite: true
         draft: false
-        tag_name: ${{ steps.gitversion.outputs.version }}
+        tag_name: ${{ github.event.repository.name }}-v${{ steps.gitversion.outputs.version }}
