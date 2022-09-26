@@ -38,3 +38,4 @@ jobs:
         major-identifier: '/(?i)\brelease\b/'
     - run: git status
     - run: echo ${{ steps.gitversion.outputs.version }}
+    - run: ./git-version
