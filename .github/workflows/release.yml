@@ -44,6 +44,8 @@ jobs:
         sudo apt-get install zip
         cd dist/spa/
         zip -r ${{ steps.gitversion.outputs.version }}.zip *
+        cd ../../
+        git log
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
