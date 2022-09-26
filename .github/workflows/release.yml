@@ -10,8 +10,7 @@ on:
 
 jobs:
   build:
-
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -39,8 +38,12 @@ jobs:
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
 
+  release:
+    runs-on: windows-latest
+    
+    steps:
     - name: Compress Release
-      run: Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
+      run: Compress-Archive dist/spa/* ${{ steps.gitversion.outputs.version }}.zip
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
