@@ -35,7 +35,8 @@ jobs:
         prefix: ${{ github.event.repository.name }}-v
         release-branch: main
         dev-branch: develop
-        major-identifier: '/(?i)\brelease\b/'
+        major-identifier: '/^(?i)\brelease\b|\bbreaking\b:/'
+        minor-identifier: '/^(?i)\bfeature\b|\bfeat\b:/'
   
     - name: Compress Release
       run: |
