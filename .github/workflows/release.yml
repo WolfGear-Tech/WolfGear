@@ -38,6 +38,7 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
+        log-path: version.txt
 
     - name: Check Version
     - run: ls
