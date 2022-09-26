@@ -35,8 +35,4 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-<<<<<<< HEAD
-    - run: git tag
-=======
-    - run: ls
->>>>>>> 360ed01f7024b269f01759957029416a0f617333
+    - run: git log
