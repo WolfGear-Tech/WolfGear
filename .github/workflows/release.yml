@@ -38,6 +38,4 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-
-    - name: Check Version
     - run: ls
