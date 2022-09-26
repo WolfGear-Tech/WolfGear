@@ -11,7 +11,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -24,8 +24,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npx quasar build
+      run: |
+        npm install
+        npx quasar build
 
     - name: Git Version
       id: gitversion
@@ -35,10 +36,9 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-
-    - run: echo ${{ steps.gitversion.outputs.version }}
-    
-    - run: Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
+      run: |
+        echo ${{ steps.gitversion.outputs.version }}
+        Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
 
     - name: Upload Release
       uses: xresloader/upload-to-github-release@v1
