@@ -40,7 +40,7 @@ jobs:
         echo ${{ steps.gitversion.outputs.version }}
         Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
 
-    - name: Upload Release
+    - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
