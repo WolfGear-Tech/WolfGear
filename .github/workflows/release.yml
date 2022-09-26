@@ -42,10 +42,7 @@ jobs:
     - name: Compress Release
       run: |
         sudo apt-get install zip
-        cd dist/spa/
-        zip -r ${{ steps.gitversion.outputs.version }}.zip *
-        cd ../../
-        git log
+        zip -r ${{ steps.gitversion.outputs.version }}.zip dist/spa/=
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
