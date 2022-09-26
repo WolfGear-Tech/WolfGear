@@ -5,8 +5,6 @@ name: Node.js CI
 
 on:
   push:
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -44,7 +42,6 @@ jobs:
         sudo apt-get install zip
         cd dist/spa/
         zip -r ${{ steps.gitversion.outputs.version }}.zip *
-        git log
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
