@@ -35,8 +35,8 @@ jobs:
     - name: Add Version
       run: |
         ls
-        sudo apt-get install jq
         cat package.json | jq --arg version ${{ steps.gitversion.outputs.version }} '.version |= $version' > package.json
+        cat package.json
 
     - name: Build Release
       run: |
