@@ -20,7 +20,6 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
     - name: Git Version
@@ -31,12 +30,6 @@ jobs:
         dev-branch: develop
         major-identifier: '/^(?i)\brelease\b|\bbreaking\b:/'
         minor-identifier: '/^(?i)\bfeature\b|\bfeat\b:/'
-
-    - name: Add Version
-      run: |
-        ls
-        cat package.json | jq --arg version ${{ steps.gitversion.outputs.version }} '.version |= $version' > package.json
-        cat package.json
 
     - name: Build Release
       run: |
