@@ -38,11 +38,12 @@ jobs:
     - run: echo ${{ steps.gitversion.outputs.version }}
 
     - name: Upload Release
+    - run: Compress-Archive dist/* ${{ steps.gitversion.outputs.version }}.zip
       uses: xresloader/upload-to-github-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        file: "./dist/*"
+        file: "${{ steps.gitversion.outputs.version }}.zip"
         overwrite: true
         draft: false
         tag_name: ${{ steps.gitversion.outputs.version }}
