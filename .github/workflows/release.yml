@@ -37,14 +37,11 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-
-  release:
-    runs-on: windows-latest
-    needs: [ build ]
-    
-    steps:
+  
     - name: Compress Release
-      run: Compress-Archive dist/spa/* ${{ steps.gitversion.outputs.version }}.zip
+      run: |
+        sudo apt-get install zip
+        zip -r ${{ steps.gitversion.outputs.version }}.zip dist/spa/*
 
     - name: Upload New Release
       uses: xresloader/upload-to-github-release@v1
