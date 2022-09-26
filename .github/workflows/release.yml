@@ -40,6 +40,7 @@ jobs:
 
   release:
     runs-on: windows-latest
+    needs: [ build ]
     
     steps:
     - name: Compress Release
