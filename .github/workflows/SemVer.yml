@@ -1,4 +1,4 @@
-name: Make Release
+name: SemVer
 
 on:
   push:
@@ -33,3 +33,5 @@ jobs:
       - name: Display version
         run: |
           echo SemVer: $SEMVER
+
+
