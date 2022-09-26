@@ -34,5 +34,5 @@ yarn-error.log*
 *.sln
 
 # Curriculum Data
-avatar.png
-curriculumData.json
+# avatar.png
+# curriculumData.json

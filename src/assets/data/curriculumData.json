@@ -1,0 +1,142 @@
+{
+    "name": "Marco Aurélio",
+    "about": "Desenvolvedor de software, apaixonado por tecnologia e inovação. Atualmente trabalho com desenvolvimento de software para web e mobile, utilizando as tecnologias mais atuais do mercado.",
+    "occupation": "Desenvolvedor de Software",
+    "icon": "fa-solid fa-circle",
+    "personalInfo": [
+        {
+            "label": "Informações",
+            "itens": [
+                {
+                    "description": "Brasileiro"
+                },
+                {
+                    "description": "Nascimento 12 de Junho de 1997"
+                },
+                {
+                    "description": "Solteiro"
+                }
+            ]
+        },
+        {
+            "label": "Contato",
+            "itens": [
+                {
+                    "icon": "fa-solid fa-location-dot",
+                    "description": "Guarujá - SP, Brasil"
+                },
+                {
+                    "icon": "fa-solid fa-envelope",
+                    "description": "marcodkts@wolfgear.tech"
+                },
+                {
+                    "icon": "fa-brands fa-github",
+                    "description": "https://github.com/marcodkts"
+                },
+                {
+                    "icon": "fa-brands fa-linkedin",
+                    "description": "https://www.linkedin.com/in/marco-aur%C3%A9lio-junior-37518218a/"
+                },
+                {
+                    "icon": "fa-solid fa-phone",
+                    "description": "+55 (13) 98156-1836"
+                }
+            ]
+        },
+        {
+            "label": "Idiomas",
+            "itens": [
+                {
+                    "description": "Português - Nativo"
+                },
+                {
+                    "description": "Inglês - Intermediário"
+                }
+            ]
+        },
+        {
+            "label": "Habilidades",
+            "itens": [
+                {
+                    "description": "Python",
+                    "level": 4
+                },
+                {
+                    "description": "C++, C#",
+                    "level": 2
+                },
+                {
+                    "description": "Vue JS, React JS",
+                    "level": 2
+                },
+                {
+                    "description": "SQL, NoSQL",
+                    "level": 3
+                }
+            ]
+        }
+    ],
+    "experiencesList": [
+        {
+            "label": "Qualificações e Experiências",
+            "itens": [
+                {
+                    "label": "C++, C#, dotNet, Windows Forms Aplication, Python, Django, Flask."
+                },
+                {
+                    "label": "Pandas, Numpy, Scipy, Pytest, Selenium, Scrapy, Beautiful Soup, PyQt5, Grafana, Metabase, DataStudio."
+                },
+                {
+                    "label": "HTML, CSS, Sass, Scss, JavaScript, React, MUI, VueJS, Quasar."
+                },
+                {
+                    "label": "SQL, MySQL, PostgreSQL, MongoDB,Docker, Docker Compose, Git, Github, Gitlab, Bitbucket."
+                },
+                {
+                    "label": "Jira, Trello, Asana, GitHub Actions."
+                },
+                {
+                    "label": "Linux, Windows, Mac, AWS, Azure,VS Code, Visual Studio, Pycharm."
+                }
+            ]
+        },
+        {
+            "label": "Formação Acadêmica",
+            "itens": [
+                {
+                    "label": "Ciência da Computação - 1º Ciclo",
+                    "description1": "Faculdade Descomplica - 2022 - Cursando"
+                },
+                {
+                    "label": "Engenharia Eletrica - 4º Ciclo",
+                    "description1": "Centro Universitário FEI - 2019 - Trancado"
+                }
+            ]
+        },
+        {
+            "label": "Experiência Profissional",
+            "itens": [
+                {
+                    "label": "FullStack Developer (freelancer) - Mog Design",
+                    "description1": "set de 2022 · atualmente",
+                    "description2": "Desenvolvimento de plataforma de gestão de mídias para Cinemark, utilizando Quasar, VueJS, Javascript, C# e dotNet."
+                },
+                {
+                    "label": "FullStack Developer (freelancer) - Suppi+",
+                    "description1": "ago de 2022 · atualmente",
+                    "description2": "Desenvolvimento de plataforma de gestão de reembolsosl voltada ao mercado b2b, utilizando Python, ReactJs, Javascript e Scss."
+                },
+                {
+                    "label": "Bussines Intelligence Developer - KondZilla",
+                    "description1": "nov de 2020 - jul de 2022 · 1 ano 9 meses",
+                    "description2": "Desenvolvimento de plataforma de BI para a empresa KondZilla, utilizando Python, Metabase, Docker, Postgres e APIs (YouTube, Spotify, SocialBlade). Na plataforma é possível visualizar dados de métricas de audiência, engajamento e monetização de conteúdo, além de métricas de performance de campanhas de marketing."
+                },
+                {
+                    "label": "Backend Developer - A55",
+                    "description1": "jun de 2021 - nov de 2021 · 6 meses",
+                    "description2": "Desenvolvimento de API para a empresa A55, utilizando Python, Django, Docker, Postgres e AWS. As APIs forneciam informações para análise de riscos."
+                }
+            ]
+        }
+    ]
+}
