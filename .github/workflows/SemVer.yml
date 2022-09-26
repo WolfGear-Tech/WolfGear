@@ -3,7 +3,7 @@ name: Make Release
 on:
   push:
     branches: [ main ]
-    
+
   workflow_dispatch:
 
 
@@ -14,7 +14,10 @@ jobs:
     outputs:
       semVer: ${{ steps.gitversion.outputs.semVer }}
     steps:
-      # gitversion/execute step omitted for brevity
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Determine Version
         id: gitversion
