@@ -1,0 +1,34 @@
+name: SemVer
+
+on:
+  push:
+    branches: [ main ]
+    
+  workflow_dispatch:
+
+
+jobs:
+  calculate-version:
+    name: Calculate Version
+    runs-on: ubuntu-latest
+    outputs:
+      semVer: ${{ steps.gitversion.outputs.semVer }}
+    steps:
+      # gitversion/execute step omitted for brevity
+
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.7
+
+  display-semver:
+    name: Display Semantic Version
+    runs-on: ubuntu-latest
+    needs: calculate-version
+    env:
+      SEMVER: ${{ needs.calculate-version.outputs.semVer }}
+    steps:
+      - name: Display version
+        run: |
+          echo SemVer: $SEMVER
+
+

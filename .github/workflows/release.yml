@@ -5,6 +5,9 @@ name: Make Release
 
 on:
   push:
+    branches: [ main ]
+    
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,23 +23,21 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
         cache: 'npm'
-
-    - name: Build Release
-      run: |
-        npm install
-        npx quasar build
 
     - name: Git Version
       id: gitversion
       uses: codacy/git-version@2.5.4
       with:
-        prefix: ${{ github.event.repository.name }}-v
         release-branch: main
         dev-branch: develop
         major-identifier: '/^(?i)\brelease\b|\bbreaking\b:/'
         minor-identifier: '/^(?i)\bfeature\b|\bfeat\b:/'
+
+    - name: Build Release
+      run: |
+        npm install
+        npx quasar build
   
     - name: Compress Release
       run: |
@@ -52,4 +53,4 @@ jobs:
         file: "dist/spa/${{ steps.gitversion.outputs.version }}.zip"
         overwrite: true
         draft: false
-        tag_name: ${{ steps.gitversion.outputs.version }}
+        tag_name: ${{ github.event.repository.name }}-v${{ steps.gitversion.outputs.version }}
