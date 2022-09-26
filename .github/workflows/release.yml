@@ -5,7 +5,6 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -36,6 +35,14 @@ jobs:
         release-branch: main
         dev-branch: develop
         major-identifier: '/(?i)\brelease\b/'
-    - run: git status
     - run: echo ${{ steps.gitversion.outputs.version }}
-    - run: ./git-version
+
+    - name: Upload Release
+      uses: xresloader/upload-to-github-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        file: "dist/*"
+        overwrite: true
+        draft: false
+        tag_name: ${{ steps.gitversion.outputs.version }}
