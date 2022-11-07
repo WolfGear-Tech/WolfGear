@@ -1,0 +1,22 @@
+version: 'latest'
+
+services:
+  ngix:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: wolfgear/page:latest
+    container_name: nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./dist/spa:/usr/share/nginx/html
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/marcodkts/.docker/config.json:/config.json
+    command: --cleanup --interval 30 wolfgear/nginx
