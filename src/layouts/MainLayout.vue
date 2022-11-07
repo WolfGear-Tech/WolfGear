@@ -116,7 +116,7 @@ const productsList = [
   {
     title: "Metabase",
     icon: "analytics",
-    link: "https://wolfgear.tech:3000",
+    link: "http://wolfgear.tech:3000",
   },
 ];
 const contactList = [
@@ -143,7 +143,7 @@ const partnerList = [
   {
     title: "Otoma",
     icon: "fa-solid fa-atom",
-    link: "https://otoma.com.br",
+    link: "http://otoma.com.br",
   },
 ];
 
