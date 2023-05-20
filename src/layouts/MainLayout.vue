@@ -34,23 +34,8 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
-      <q-list>
-        <q-expansion-item
-          icon="category"
-          label="Produtos"
-          default-opened
-          :content-inset-level="0.5"
-        >
-          <EssentialLink
-            v-for="link in productsLinks"
-            :key="link.title"
-            v-bind="link"
-          />
-        </q-expansion-item>
-      </q-list>
-
       <q-list bottom>
-        <q-expansion-item
+        <!-- <q-expansion-item
           icon="contact_page"
           label="Contato"
           :content-inset-level="0.5"
@@ -62,8 +47,8 @@
               v-bind="link"
             />
           </q-card>
-        </q-expansion-item>
-        <q-expansion-item
+        </q-expansion-item> -->
+        <!-- <q-expansion-item
           icon="fa-solid fa-handshake"
           label="Parceiros"
           :content-inset-level="0.5"
@@ -73,7 +58,7 @@
             :key="link.title"
             v-bind="link"
           />
-        </q-expansion-item>
+        </q-expansion-item> -->
         <q-item to="/about" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="article" />
@@ -86,12 +71,12 @@
           </q-item-section>
           <q-item-section> Currículo </q-item-section>
         </q-item>
-        <q-item to="/login" clickable v-ripple>
+        <!-- <q-item to="/login" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="fa-solid fa-right-to-bracket" />
           </q-item-section>
           <q-item-section> Login </q-item-section>
-        </q-item>
+        </q-item> -->
         <!-- <q-item to="/help" clickable v-ripple>
           <q-item-section avatar>
             <q-icon name="help"/>
@@ -109,58 +94,19 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
 import { Dark, Cookies } from "quasar";
 
-const productsList = [
-  {
-    title: "Metabase",
-    icon: "analytics",
-    link: "http://wolfgear.tech:3000",
-  },
-];
-const contactList = [
-  {
-    title: "Github",
-    caption: "github.com/marcodkts",
-    icon: "fa-brands fa-github",
-    link: "https://github.com/marcodkts",
-  },
-  {
-    title: "Mail",
-    caption: "marcodkts@wolfgear.tech",
-    icon: "mail",
-    link: "mailto:marcodkts@wolfgear.tech",
-  },
-  {
-    title: "Linkedin",
-    caption: "Marco Aurélio",
-    icon: "fa-brands fa-linkedin",
-    link: "https://www.linkedin.com/in/marco-aur%C3%A9lio-junior-37518218a/",
-  },
-];
-const partnerList = [
-  {
-    title: "Otoma",
-    icon: "fa-solid fa-atom",
-    link: "http://otoma.com.br",
-  },
-];
 
 export default defineComponent({
   name: "MainLayout",
 
   components: {
-    EssentialLink,
   },
 
   setup() {
-    const leftDrawerOpen = ref(true);
+    const leftDrawerOpen = ref(false);
 
     return {
-      contactLinks: contactList,
-      partnerLinks: partnerList,
-      productsLinks: productsList,
       leftDrawerOpen,
       darkMode: ref(false),
       toggleLeftDrawer() {
@@ -174,13 +120,6 @@ export default defineComponent({
       Dark.set(val);
       Cookies.set("darkMode", val);
     },
-    // darkModeCookie() {
-    //   if (Cookies.get('darkMode') != null)
-    //     Dark.set(Cookies.get('darkMode'))
-    // },
-    // onLoad() {
-    //   this.darkModeCookie()
-    // },
   },
 });
 </script>
