@@ -3,7 +3,7 @@
     "about": "Desenvolvedor de software, apaixonado por tecnologia e inovação. Atualmente trabalho com desenvolvimento de software para web e mobile, utilizando as tecnologias mais atuais do mercado.",
     "occupation": "Desenvolvedor de Software",
     "icon": "fa-solid fa-circle",
-    "lastUpdate": "2023-01-04",
+    "lastUpdate": "2023-05-29",
     "personalInfo": [
         {
             "label": "Informações",
@@ -28,7 +28,7 @@
                 },
                 {
                     "icon": "fa-solid fa-envelope",
-                    "description": "marcodkts@wolfgear.tech"
+                    "description": "marco.aurelio_1997@hotmail.com"
                 },
                 {
                     "icon": "fa-brands fa-github",
@@ -36,7 +36,7 @@
                 },
                 {
                     "icon": "fa-brands fa-linkedin",
-                    "description": "https://www.linkedin.com/in/marco-aur%C3%A9lio-junior-37518218a/"
+                    "description": "https://www.linkedin.com/in/marcodkts/"
                 },
                 {
                     "icon": "fa-solid fa-phone",
@@ -51,7 +51,7 @@
                     "description": "Português - Nativo"
                 },
                 {
-                    "description": "Inglês - Intermediário"
+                    "description": "Inglês - Avançado"
                 }
             ]
         },
@@ -59,20 +59,20 @@
             "label": "Habilidades",
             "itens": [
                 {
-                    "description": "Python",
-                    "level": 4
+                    "description": "BackEnd",
+                    "level": 5
                 },
                 {
-                    "description": "C++, C#",
-                    "level": 2
+                    "description": "DevOps",
+                    "level": 3
                 },
                 {
-                    "description": "Vue JS, React JS",
-                    "level": 2
+                    "description": "FrontEnd",
+                    "level": 3
                 },
                 {
                     "description": "SQL, NoSQL",
-                    "level": 3
+                    "level": 4
                 }
             ]
         }
@@ -82,13 +82,13 @@
             "label": "Qualificações e Experiências",
             "itens": [
                 {
-                    "label": "C++, C#, dotNet, Windows Forms Aplication, Python, Django, Flask."
+                    "label": "C++, C#, dotNet, Windows Forms Aplication, Python, PHP, GO, Node."
                 },
                 {
-                    "label": "Pandas, Numpy, Scipy, Pytest, Selenium, Scrapy, Beautiful Soup, PyQt5, Grafana, Metabase, DataStudio."
+                    "label": "Django, Flask, Pandas, Numpy, Scipy, Pytest, Selenium, Scrapy, Beautiful Soup, PyQt5, Grafana, Metabase, DataStudio."
                 },
                 {
-                    "label": "HTML, CSS, Sass, Scss, JavaScript, React, MUI, VueJS, Quasar."
+                    "label": "HTML, CSS, Sass, Scss, JavaScript, TypeScript, React, MUI, VueJS, Quasar."
                 },
                 {
                     "label": "SQL, MySQL, PostgreSQL, MongoDB,Docker, Docker Compose, Git, Github, Gitlab, Bitbucket."
@@ -105,7 +105,7 @@
             "label": "Formação Acadêmica",
             "itens": [
                 {
-                    "label": "Ciência da Computação - 1º Ciclo",
+                    "label": "Ciência da Computação",
                     "description1": "Faculdade Descomplica - 2022 - Cursando"
                 },
                 {
@@ -118,13 +118,18 @@
             "label": "Experiência Profissional",
             "itens": [
                 {
-                    "label": "FullStack Developer (freelancer) - Mog Design",
-                    "description1": "set de 2022 · atualmente",
+                    "label": "FullStack Developer - Edesoft",
+                    "description1": "mar de 2023 · atualmente",
+                    "description2": "Atuando como desenvolvedor Full Stack para o cliente Empírica, utilizando AWS Serverless, Python, React."
+                },
+                {
+                    "label": "FullStack Developer - Mog Design",
+                    "description1": "set de 2022 · dec de 2023",
                     "description2": "Desenvolvimento de plataforma de gestão de mídias para Cinemark, utilizando Quasar, VueJS, Javascript, C# e dotNet."
                 },
                 {
-                    "label": "FullStack Developer (freelancer) - Suppi+",
-                    "description1": "ago de 2022 · atualmente",
+                    "label": "FullStack Developer - Suppi+",
+                    "description1": "ago de 2022 · nov de 2022",
                     "description2": "Desenvolvimento de plataforma de gestão de reembolsosl voltada ao mercado b2b, utilizando Python, ReactJs, Javascript e Scss."
                 },
                 {
