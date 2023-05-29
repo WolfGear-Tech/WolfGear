@@ -1,148 +1,148 @@
 {
-  "name": "Marco Aurélio",
-  "about": "Software developer passionate about technology and innovation. Currently working on web and mobile software development, using the latest technologies in the market.",
-  "occupation": "Software Developer",
-  "icon": "fa-solid fa-circle",
-  "lastUpdate": "2023-05-29",
-  "personalInfo": [
-    {
-      "label": "Information",
-      "items": [
+    "name": "Marco Aurélio",
+    "about": "Desenvolvedor de software, apaixonado por tecnologia e inovação. Atualmente trabalho com desenvolvimento de software para web e mobile, utilizando as tecnologias mais atuais do mercado.",
+    "occupation": "Desenvolvedor de Software",
+    "icon": "fa-solid fa-circle",
+    "lastUpdate": "2023-05-29",
+    "personalInfo": [
         {
-          "description": "Brazilian"
+            "label": "Informações",
+            "itens": [
+                {
+                    "description": "Brasileiro"
+                },
+                {
+                    "description": "Nascimento 12 de Junho de 1997"
+                },
+                {
+                    "description": "Solteiro"
+                }
+            ]
         },
         {
-          "description": "Born on June 12, 1997"
+            "label": "Contato",
+            "itens": [
+                {
+                    "icon": "fa-solid fa-location-dot",
+                    "description": "Guarujá - SP, Brasil"
+                },
+                {
+                    "icon": "fa-solid fa-envelope",
+                    "description": "marco.aurelio_1997@hotmail.com"
+                },
+                {
+                    "icon": "fa-brands fa-github",
+                    "description": "https://github.com/marcodkts"
+                },
+                {
+                    "icon": "fa-brands fa-linkedin",
+                    "description": "https://www.linkedin.com/in/marcodkts/"
+                },
+                {
+                    "icon": "fa-solid fa-phone",
+                    "description": "+55 (13) 98156-1836"
+                }
+            ]
         },
         {
-          "description": "Single"
+            "label": "Idiomas",
+            "itens": [
+                {
+                    "description": "Português - Nativo"
+                },
+                {
+                    "description": "Inglês - Avançado"
+                }
+            ]
+        },
+        {
+            "label": "Habilidades",
+            "itens": [
+                {
+                    "description": "BackEnd",
+                    "level": 4
+                },
+                {
+                    "description": "DevOps",
+                    "level": 3
+                },
+                {
+                    "description": "FrontEnd",
+                    "level": 3
+                },
+                {
+                    "description": "SQL, NoSQL",
+                    "level": 4
+                }
+            ]
         }
-      ]
-    },
-    {
-      "label": "Contact",
-      "items": [
+    ],
+    "experiencesList": [
         {
-          "icon": "fa-solid fa-location-dot",
-          "description": "Guarujá - SP, Brazil"
+            "label": "Qualificações e Experiências",
+            "itens": [
+                {
+                    "label": "C++, C#, dotNet, Windows Forms Aplication, Python, PHP, GO, Node."
+                },
+                {
+                    "label": "Django, Flask, Pandas, Numpy, Scipy, Pytest, Selenium, Scrapy, Beautiful Soup, PyQt5, Grafana, Metabase, DataStudio."
+                },
+                {
+                    "label": "HTML, CSS, Sass, Scss, JavaScript, TypeScript, React, MUI, VueJS, Quasar."
+                },
+                {
+                    "label": "SQL, MySQL, PostgreSQL, MongoDB,Docker, Docker Compose, Git, Github, Gitlab, Bitbucket."
+                },
+                {
+                    "label": "Jira, Trello, Asana, GitHub Actions."
+                },
+                {
+                    "label": "Linux, Windows, Mac, AWS, Azure,VS Code, Visual Studio, Pycharm."
+                }
+            ]
         },
         {
-          "icon": "fa-solid fa-envelope",
-          "description": "marco.aurelio_1997@hotmail.com"
+            "label": "Formação Acadêmica",
+            "itens": [
+                {
+                    "label": "Ciência da Computação",
+                    "description1": "Faculdade Descomplica - 2022 - Cursando"
+                },
+                {
+                    "label": "Engenharia Eletrica - 4º Ciclo",
+                    "description1": "Centro Universitário FEI - 2019 - Trancado"
+                }
+            ]
         },
         {
-          "icon": "fa-brands fa-github",
-          "description": "https://github.com/marcodkts"
-        },
-        {
-          "icon": "fa-brands fa-linkedin",
-          "description": "https://www.linkedin.com/in/marcodkts/"
-        },
-        {
-          "icon": "fa-solid fa-phone",
-          "description": "+55 (13) 98156-1836"
+            "label": "Experiência Profissional",
+            "itens": [
+                {
+                    "label": "FullStack Developer - Edesoft",
+                    "description1": "mar de 2023 · atualmente",
+                    "description2": "Atuando como desenvolvedor Full Stack para o cliente Empírica, utilizando AWS Serverless, Python, React."
+                },
+                {
+                    "label": "FullStack Developer - Mog Design",
+                    "description1": "set de 2022 · dec de 2023",
+                    "description2": "Desenvolvimento de plataforma de gestão de mídias para Cinemark, utilizando Quasar, VueJS, Javascript, C# e dotNet."
+                },
+                {
+                    "label": "FullStack Developer - Suppi+",
+                    "description1": "ago de 2022 · nov de 2022",
+                    "description2": "Desenvolvimento de plataforma de gestão de reembolsosl voltada ao mercado b2b, utilizando Python, ReactJs, Javascript e Scss."
+                },
+                {
+                    "label": "Bussines Intelligence Developer - KondZilla",
+                    "description1": "nov de 2020 - jul de 2022 · 1 ano 9 meses",
+                    "description2": "Desenvolvimento de plataforma de BI para a empresa KondZilla, utilizando Python, Metabase, Docker, Postgres e APIs (YouTube, Spotify, SocialBlade). Na plataforma é possível visualizar dados de métricas de audiência, engajamento e monetização de conteúdo, além de métricas de performance de campanhas de marketing."
+                },
+                {
+                    "label": "Backend Developer - A55",
+                    "description1": "jun de 2021 - nov de 2021 · 6 meses",
+                    "description2": "Desenvolvimento de API para a empresa A55, utilizando Python, Django, Docker, Postgres e AWS. As APIs forneciam informações para análise de riscos."
+                }
+            ]
         }
-      ]
-    },
-    {
-      "label": "Languages",
-      "items": [
-        {
-          "description": "Portuguese - Native"
-        },
-        {
-          "description": "English - Advanced"
-        }
-      ]
-    },
-    {
-      "label": "Skills",
-      "items": [
-        {
-          "description": "Backend",
-          "level": 4
-        },
-        {
-          "description": "DevOps",
-          "level": 3
-        },
-        {
-          "description": "Frontend",
-          "level": 3
-        },
-        {
-          "description": "SQL, NoSQL",
-          "level": 4
-        }
-      ]
-    }
-  ],
-  "experiencesList": [
-    {
-      "label": "Qualifications and Experiences",
-      "items": [
-        {
-          "label": "C++, C#, dotNet, Windows Forms Application, Python, PHP, GO, Node."
-        },
-        {
-          "label": "Django, Flask, Pandas, Numpy, Scipy, Pytest, Selenium, Scrapy, Beautiful Soup, PyQt5, Grafana, Metabase, DataStudio."
-        },
-        {
-          "label": "HTML, CSS, Sass, Scss, JavaScript, TypeScript, React, MUI, VueJS, Quasar."
-        },
-        {
-          "label": "SQL, MySQL, PostgreSQL, MongoDB, Docker, Docker Compose, Git, Github, Gitlab, Bitbucket."
-        },
-        {
-          "label": "Jira, Trello, Asana, GitHub Actions."
-        },
-        {
-          "label": "Linux, Windows, Mac, AWS, Azure, VS Code, Visual Studio, Pycharm."
-        }
-      ]
-    },
-    {
-      "label": "Academic Background",
-      "items": [
-        {
-          "label": "Computer Science",
-          "description1": "Faculdade Descomplica - 2022 - Ongoing"
-        },
-        {
-          "label": "Electrical Engineering - 4th Cycle",
-          "description1": "Centro Universitário FEI - 2019 - On Hold"
-        }
-      ]
-    },
-    {
-      "label": "Professional Experience",
-      "items": [
-        {
-          "label": "FullStack Developer - Edesoft",
-          "description1": "March 2023 - Present",
-          "description2": "Working as a Full Stack developer for the Empírica client, using AWS Serverless, Python, and React."
-        },
-        {
-          "label": "FullStack Developer - Mog Design",
-          "description1": "September 2022 - December 2023",
-          "description2": "Developed a media management platform for Cinemark, using Quasar, VueJS, JavaScript, C#, and dotNet."
-        },
-        {
-          "label": "FullStack Developer - Suppi+",
-          "description1": "August 2022 - November 2022",
-          "description2": "Developed a B2B refund management platform using Python, ReactJS, JavaScript, and Scss."
-        },
-        {
-          "label": "Business Intelligence Developer - KondZilla",
-          "description1": "November 2020 - July 2022",
-          "description2": "Developed a BI platform for KondZilla, using Python, Metabase, Docker, Postgres, and APIs (YouTube, Spotify, SocialBlade). The platform allows viewing audience, engagement, and monetization metrics, as well as marketing campaign performance metrics."
-        },
-        {
-          "label": "Backend Developer - A55",
-          "description1": "June 2021 - November 2021",
-          "description2": "Developed APIs for A55, using Python, Django, Docker, Postgres, and AWS. The APIs provided information for risk analysis."
-        }
-      ]
-    }
-  ]
+    ]
 }
